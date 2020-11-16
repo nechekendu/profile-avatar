@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+       font-size: 11px; text-align: center; 
+       margin-top: 100px;
+       position: relative;
+      }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background: hsla(192, 56%, 47%, 0.911);
+    }
+
+    #half-moon1{
+      width: 50%;
+      height: 46vh;
+      position: absolute;
+      top: -90px;
+      left: -16px;
+      
+    }
+ #top {
+     transform: rotate(-25deg);
+     width: 40vw;
+ }   
+
+    #half-moon {
+      width: 50%;
+      position: absolute;
+      margin-left: 300px;
+      bottom: -20px;
+      right: 0;
+    }
+    #bottom {
+      transform: rotate(120deg);
+     width: 30vw;
+   }
+
+   .container {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: hsla(193, 6%, 45%, 0.911);
+      display: grid;
+      width: auto;
+      margin: auto;
+      max-width: 350px;
+      height: auto;
+      max-height: 360px;
+      margin-top: 100px; 
+      box-shadow: rgba(0, 0, 0, 0.5);
+   }
+   
+   .card-container img {
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+   }
+
+   .img-container img {
+     border-radius: 50%;
+     width: auto;
+     margin: auto 100px 0px;
+     margin-top: -70px;
+     padding: 20px;
+   }
+   #profile 
+   {
+      align-items: center;
+      text-align: center;
+      margin-top: -30px;
+   }
+   #profile p strong {
+     font-size: 18px;
+   }
+   #ash {
+     color: gray;
+   }
+   div ul {
+     display: flex;
+     bottom: 0;
+   } 
+   ul a {
+     text-decoration: none;
+     color: #000;
+     font-size: 19px;
+    
+   }
+   ul li {
+     list-style: none;
+     margin-left: 30px
+   }
+
+  </style>
+</head>
+<body>
+
+  <div id="half-moon1">
+    <img src="./images/bg-pattern-top.svg" id="top" alt="moon top">
+  </div>
+
+<div class="container">
+    <div class="card-container">
+      <img src="./images/bg-pattern-card.svg" id="card" alt="top">
+    </div>
+
+    <div>
+      
+      <div class="img-container">
+        <img src="./images/image-victor.jpg" alt="profile photo" id="avatar">
+      </div>
+
+    <div id="profile">
+        <p><strong>Victor Crest </strong> 26</p>
+        <p  id="ash">London</p>
+  </div>
+
+
+  <div>
+  <ul>
+    <li><a href="#"><strong>80K</strong></a>
+      <br>Followers</li>
+
+      <li><a href="#"><strong>803K</strong></a>
+        <br>Likes</li>
+
+        <li><a href="#"><strong>1.4K</strong></a>
+          <br>Photos</li>
+  </ul>
+</div>
+    
+  </div> 
+
+  <div id="half-moon">
+    <img src="./images/bg-pattern-bottom.svg" id="bottom" alt="moon bottom">
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.github.com/nechekendu">Neche</a>.
+  </div>
+</body>
+</html>
